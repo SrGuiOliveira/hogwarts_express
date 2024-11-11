@@ -1,0 +1,14 @@
+.hero {
+    background-image: url('../../dist/images/background/header.jpg');
+    min-height: 100vh;
+    background-size: cover;
+
+    &__contents {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__content {
+            text-align: center;
+        }
+    }
+}
