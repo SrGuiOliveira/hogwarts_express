@@ -1,5 +1,39 @@
 @use 'var';
 
 .header {
-    background-image: url('../../dist/images/background/header.jpg');
+    padding: 15px;
+    background-color: var.$secondColor;
+    color: var.$darkGolden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+    &__branding {
+        display: flex;
+        
+        &__logo {
+            width: 60px;
+            padding-right: 10px;
+        }
+
+        &__title {
+            font-style: italic;
+            font-weight: bolder;
+        }
+    }
+    
+    &__menu {
+        display: flex;
+        
+        &__items {
+            padding-left: 5px;
+
+            &__item {
+                color: var.$darkGolden;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }   
 }
