@@ -1,0 +1,69 @@
+@use 'var';
+
+.books {
+    padding-top: 5vh;
+    height: 100vh;
+    background: linear-gradient(45deg, var.$Darkblue, var.$lightBlue); 
+
+    h2 {
+        color: var.$textColor;
+        font-size: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+
+        &__book {
+            img {
+                width: 250px;
+                height: 350px;
+                border-radius: 10px;
+                justify-content: center;
+            }
+
+            h3 {
+                color: var.$darkTextColor;
+                font-size: 20px;
+                font-weight: bolder;
+            }
+
+            p {
+                color: var.$darkTextColor;
+                font-weight: bold;
+            }
+
+            span {
+                color: var.$textColor;
+            }
+
+            &__link {
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                img {
+                    height: 40px;
+                    width: 100px;
+                    margin-left: 10px;
+
+                    &:hover {
+                        filter: brightness(110%);
+                        width: 105px;
+                        height: 45px;
+                    }
+                }
+
+                p {
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+}
