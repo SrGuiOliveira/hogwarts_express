@@ -4,7 +4,7 @@
     min-height: 100vh;
     padding-top: 10vh;
 
-    background: radial-gradient(circle at center, var.$secondColor, var.$backgroundColor);
+    background: radial-gradient(circle at center, var.$lightBlue, var.$Darkblue);
 
     &__contents {
         
@@ -12,18 +12,19 @@
             color: var.$textColor;
 
             h2 {
-              font-size: 40px;
+              font-size: 35px;
               text-align: center;
               text-transform: uppercase;
               margin-bottom: 60px;
-              font-weight: bolder;
+              font-weight: bold;
+              font-style: italic;
             }
 
             &__title {
-              color: var.$darkGolden;
               font-size: 30px;
               font-weight: bolder;
               font-style: italic;
+              color: var.$darkTextColor;
 
             }
 
@@ -34,7 +35,6 @@
 
             &__sinopse {
               margin-top: 20px;
-              font-weight: bold;
             }
             
             &__info {
@@ -44,13 +44,15 @@
                 display: flex;
 
                 p {
-                  color: var.$darkGolden;
                   font-weight: bolder;
+                  font-size: 17px;
+                  font-style: italic;
+                  color: gray;
 
                   span {
                     color: #fff;
                     margin-left: 10px;
-                    font-weight: bold;
+                    font-style: normal;
                   }
                 }
 
