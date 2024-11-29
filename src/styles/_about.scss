@@ -1,0 +1,55 @@
+@use 'var';
+
+.about {
+    padding-top: 5vh;
+    height: 95vh;
+    background: linear-gradient(180deg, var.$lightBlue, var.$Darkblue);
+    
+    h2 {
+        color: var.$textColor;
+        font-size: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    h3 {
+        text-align: center;
+        color: var.$darkTextColor;
+    }
+
+    .contents {
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+
+        
+        
+
+        img {
+            max-width: 350px;
+            max-height: 350px;
+            border-radius: 10px;
+        }
+
+        p {
+            margin-left: 15px;
+            color: var.$textColor;
+        }
+    }
+    .inverted {
+        flex-direction: row-reverse;
+        align-items: center;
+
+        img {
+            height: 350px;
+            width: 350px;
+        }
+
+        p {
+            margin-right: 15px;
+        }
+    }
+}
