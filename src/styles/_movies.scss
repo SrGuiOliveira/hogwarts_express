@@ -1,10 +1,6 @@
 @use 'var';
 
 .movies {
-    min-height: 100vh;
-    padding-top: 10vh;
-
-    background: radial-gradient(circle at center, var.$lightBlue, var.$Darkblue);
 
     &__contents {
         
@@ -73,5 +69,36 @@
         }
     }
 
-    
+  @media (max-width:1023px) {
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    padding: 12px;
+    &__contents {
+        
+      &__content {
+        
+        h2 {
+          font-size: 25px;
+          margin-bottom: 30px;
+        }
+        
+        &__title {
+          margin-top: 15px;
+        }
+
+       }
+    }
+  }
 }

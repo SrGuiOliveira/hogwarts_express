@@ -1,10 +1,7 @@
 @use 'var';
 
 .books {
-    padding-top: 5vh;
-    height: 100vh;
-    background: linear-gradient(45deg, var.$Darkblue, var.$lightBlue); 
-
+    
     h2 {
         color: var.$textColor;
         font-size: 35px;
@@ -64,6 +61,29 @@
                     padding-top: 15px;
                 }
             }
+        }
+    }
+
+    @media (max-width:1023px) {
+        &__list {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            align-items: center;
+
+            &__book {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        margin-bottom: 10px;
+    }
+
+    @media (max-width:767px) {
+        padding: 12px;
+        &__list {
+            grid-template-columns: 1fr;
         }
     }
 }

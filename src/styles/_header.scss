@@ -9,9 +9,12 @@
     align-items: center;
     border-bottom: 1px solid var.$Darkblue;
     border-radius: 10px;
+    position: sticky;
+    background-color: darkred;
 
     &__branding {
         display: flex;
+        align-items: center;
         
         &__logo {
             width: 60px;
@@ -32,9 +35,32 @@
 
             &__item {
                 color: var.$darkGolden;
-                font-weight: bold;
+                font-weight: bolder;
                 text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover {
+                    filter: brightness(150%);
+                    font-size: 105%;
+                }
             }
         }
-    }   
+    }
+    
+    @media (max-width:767px) {
+        flex-direction: column;
+            text-align: center;
+        &__branding {
+            
+            &__logo {
+                width: 50px;
+                height: 40px;
+            }
+
+            &__title {
+                font-size: 25px;
+                text-wrap: nowrap;
+            }
+        }
+    }
 }
