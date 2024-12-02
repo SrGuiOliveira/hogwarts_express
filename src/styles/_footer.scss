@@ -1,0 +1,14 @@
+@use 'var';
+
+.footer {
+    padding: 50px;
+    background: linear-gradient(45deg, var.$Darkblue, var.$lightBlue); 
+    color: var.$darkTextColor;
+    text-align: center;
+    border-radius: 10px;
+    
+    p {
+        margin-bottom: 0;
+    }
+    
+}
